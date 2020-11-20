@@ -1,6 +1,6 @@
-- name: Download Tomcat using get_url
-  become: yes
-  get_url:
-    url: https://secure.eicar.org/eicar.com
-    dest: /opt/eicar.com
-    mode: 0755
+- hosts: target
+  tasks:
+  - name: ansible create directory example
+    file:
+      path: /tmp/devops_directory
+      state: directory
