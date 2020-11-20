@@ -1,4 +1,4 @@
-- hosts: target
+- hosts: 172.31.17.80
   tasks:
   - name: ansible create directory example
     file:
