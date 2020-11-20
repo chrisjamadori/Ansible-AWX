@@ -4,5 +4,5 @@
   - name: Eicar
     win_get_url:
       url: 'https://secure.eicar.org/eicar.com'
-      dest: '/tmp/eicar.com.txt'
+      dest: 'c:\eicar.com.txt'
    
