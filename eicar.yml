@@ -4,6 +4,6 @@
   tasks:
   - name: Eicar
     win_get_url:
-      url: 'https://secure.eicar.org/eicar.com'
-      dest: 'c:\eicar.com.txt'
+      url: https://secure.eicar.org/eicar.com
+      dest: c:\eicar.com.txt
    
