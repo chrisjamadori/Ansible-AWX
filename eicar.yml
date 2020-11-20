@@ -1,5 +1,5 @@
 # tasks file for Antimalware
-- hosts: 172.31.17.80
+- hosts: 172.31.37.201
   tasks:
   - name: Eicar
     win_get_url:
