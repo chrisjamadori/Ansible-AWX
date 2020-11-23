@@ -1,5 +1,5 @@
 # tasks file for Antimalware
-- hosts: 172.31.26.2
+- hosts: C1WS
   gather_facts: no
   tasks:
   - name: Eicar
