@@ -1,6 +1,6 @@
 ---
 # ransomware detection
-- hosts: 172.31.73.90
+- hosts: 172.31.26.2
   gather_facts: no
   tasks:
   - name: Download Ransomware
