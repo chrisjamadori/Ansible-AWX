@@ -8,10 +8,12 @@
        url: https://product-experience-attack-platform.s3.us-east-2.amazonaws.com/Invoice.zip
        dest: c:\Invoice.zip
     
-  - name: Extract Ransomware
-    unarchive:
-       src: c:\Invoice
-       dest: c:\
+  - name: Unzip .7z file which is password encrypted
+    community.windows.win_unzip:
+      src: C:\Invoice.zip
+      dest: C:\
+      password: trendmicro
+      delete_archive: yes
     
   
   
