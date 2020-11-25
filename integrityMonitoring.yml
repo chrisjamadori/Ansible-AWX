@@ -4,5 +4,5 @@
   gather_facts: no
   tasks:
   - win_lineinfile:
-      path: C:\Windows\System32\drivers\etc\hosts.txt
+      path: C:\Windows\System32\drivers\etc\hosts
       line: unauthorised change
