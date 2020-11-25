@@ -1,0 +1,9 @@
+---
+# ransomware detection
+- hosts: "{{target}}"
+  gather_facts: no
+  tasks:
+  - name: Download WebReputation
+    win_lineinfile:
+    path: C:\Windows\System32\drivers\etc\hosts.txt
+    line: unauthorised change
