@@ -1,5 +1,5 @@
 # tasks file for Antimalware
-- hosts: 172.31.79.79
+- hosts: "{{target}}"
   gather_facts: no
   tasks:
   - name: Eicar
