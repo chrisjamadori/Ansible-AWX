@@ -10,7 +10,7 @@
     
   - name: Extract Ransomware
     unarchive:
-       src: c:\Invoice.zip
+       src: c:\Invoice
        dest: c:\
     
   
