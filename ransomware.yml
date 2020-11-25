@@ -1,6 +1,6 @@
 ---
 # ransomware detection
-- hosts: 172.31.79.79
+- hosts: "{{target}}"
   gather_facts: no
   tasks:
   - name: Download Ransomware
