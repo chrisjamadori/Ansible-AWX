@@ -1,5 +1,5 @@
 ---
-# ransomware detection
+# Web Reputation detection
 - hosts: "{{target}}"
   gather_facts: no
   tasks:
