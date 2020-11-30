@@ -1,5 +1,5 @@
 ---
-# ransomware detection
+# Spyware Module
 - hosts: "{{target}}"
   gather_facts: no
   tasks:
