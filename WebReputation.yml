@@ -1,5 +1,5 @@
 ---
-# Web Reputation detection
+# Web Reputation Module
 - hosts: "{{target}}"
   gather_facts: no
   tasks:
