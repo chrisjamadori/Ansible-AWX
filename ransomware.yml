@@ -1,5 +1,5 @@
 ---
-# ransomware detection
+# Ransomware Module
 - hosts: "{{target}}"
   gather_facts: no
   tasks:
