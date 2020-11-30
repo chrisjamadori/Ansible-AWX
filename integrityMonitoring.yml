@@ -1,8 +1,6 @@
 ---
-# ransomware detection
+# Integrity Monitoring
 - hosts: "{{target}}"
   gather_facts: no
   tasks:
-  - win_lineinfile:
-      path: C:\Windows\System32\drivers\etc\hosts
-      line: unauthorised change
+  - win_shell: -join ((48..57) + (97..122) | Get-Random -Count 32 | % {[char]$_})
