@@ -3,4 +3,6 @@
 - hosts: "{{target}}"
   gather_facts: no
   tasks:
-  - win_shell: -join ((48..57) + (97..122) | Get-Random -Count 32 | % {[char]$_})
+  - win_shell: -join ((48..57) + (97..122) | Get-Random -Count 32 | % {[char]$_}) >> c:\somelog.txt
+
+
