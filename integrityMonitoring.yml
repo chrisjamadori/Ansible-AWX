@@ -3,6 +3,6 @@
 - hosts: "{{target}}"
   gather_facts: no
   tasks:
-  - win_shell: -join ((48..57) + (97..122) | Get-Random -Count 32 | % {[char]$_}) >> C:\Windows\System32\drivers\etc\hosts.txt
+  - win_shell: -join ((48..57) + (97..122) | Get-Random -Count 32 | % {[char]$_}) >> C:\Windows\System32\drivers\etc\hosts2.txt
 
 
