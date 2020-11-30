@@ -1,5 +1,5 @@
 ---
-# Integrity Monitoring
+# Integrity Monitoring Module
 - hosts: "{{target}}"
   gather_facts: no
   tasks:
