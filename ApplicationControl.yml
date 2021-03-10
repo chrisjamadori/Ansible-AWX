@@ -7,7 +7,5 @@
     win_get_url:
        url: https://product-experience-attack-platform.s3.us-east-2.amazonaws.com/ApplicationControl.exe
        dest: c:\ApplicationControl.exe
-       
-    win_package:
-       path: c:\ApplicationControl.exe
-       state: present
+  
+
