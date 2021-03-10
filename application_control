@@ -1,0 +1,15 @@
+---
+# Application Control Module
+- hosts: "{{target}}"
+  gather_facts: no
+  tasks:
+  - name: Download Skype
+    win_get_url:
+       url: https://product-experience-attack-platform.s3.us-east-2.amazonaws.com/ApplicationControl.exe
+       dest: c:\ApplicationControl.exe
+       
+
+- name: Ensure 7-Zip is installed via win_package
+  win_package:
+    path: c:\ApplicationControl.exe
+    state: present
