@@ -3,7 +3,7 @@
 - hosts: "{{target}}"
   gather_facts: no
   tasks:
-  - name: Download Skype
+  - name: Download 7-Zip
     win_get_url:
        url: https://product-experience-attack-platform.s3.us-east-2.amazonaws.com/ApplicationControl.exe
        dest: c:\ApplicationControl.exe
