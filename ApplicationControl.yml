@@ -5,7 +5,7 @@
   tasks:
   - name: Download 7-Zip
     win_get_url:
-       url: https://product-experience-attack-platform.s3.us-east-2.amazonaws.com/ApplicationControl.exe
+       url: https://www.7-zip.org/a/7z1900.exe
        dest: c:\ApplicationControl.exe
   
   - name: Ensure 7-Zip is installed via win_package
