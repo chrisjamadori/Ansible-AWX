@@ -5,8 +5,8 @@
   tasks:
   - name: Download 7-Zip
     win_get_url:
-       url: https://product-experience-attack-platform.s3.us-east-2.amazonaws.com/ApplicationControl.msi
-       dest: c:\ApplicationControl.msi
+       url: https://github.com/chrisjamadori/Ansible-AWX/blob/811f7fdc87b7c58e8405bc616b564323341fc1ca/Anti-Malware.exe
+       dest: c:\ApplicationControl.exe
   
   - name: Ensure 7-Zip is installed via win_package
     win_package:
