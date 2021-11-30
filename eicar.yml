@@ -1,5 +1,5 @@
 # Antimalware Module
-- hosts: "{{target}}"
+- hosts: test
   gather_facts: no
   tasks:
   - name: Eicar
